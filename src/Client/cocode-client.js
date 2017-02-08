@@ -1,5 +1,3 @@
-
-
 let actorreactor = require('actorreactor.js/src/application');
 let clientManager = require('../Shared/ClientStore');
 
@@ -8,13 +6,13 @@ class CodeHighlighter extends actorreactor.Reactor {
     imports() {
         importScripts("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js");
     }
+
     react(rawCode) {
         rawCode.map(code => self.hljs.highlightAuto(code))
             .pluck("value")
             .broadcastAs("html");
     }
 }
-
 
 
 class CoCodeClientApplication extends actorreactor.Application {
@@ -24,9 +22,7 @@ class CoCodeClientApplication extends actorreactor.Application {
         this.name = myName;
     }
 
-    initialize(cocodeServer) {
-
-        this.cocodeServer = cocodeServer;
+    initialize() {
 
         this.coders = new clientManager.ClientStore();
 
@@ -42,20 +38,18 @@ class CoCodeClientApplication extends actorreactor.Application {
         this.privateChatSendButton = document.getElementById("privateSendButton");
         this.privateChatInputField = document.getElementById("privateMessageText");
 
-        let highlighterService = this.spawnReactor(CodeHighlighter, [[cocodeServer, "RawCode"]], 8080);
-
 
         Rx.Observable.fromEvent(this.commitButton, "click")
             .map(_ => this.codeField.innerText)
             .broadcastAs("CodeCommit");
 
-        let chatMessages = Rx.Observable.fromEvent(this.publicChatSendButton, "click")
-            .map(_ => this.name + ": " + this.publicChatInputField.value);
-        chatMessages.broadcastAs("ChatMessage");
-        chatMessages.subscribe(chatMessage => {
-            this.addChatMessage(chatMessage);
-            this.publicChatInputField.value = "";
-        });
+        Rx.Observable.fromEvent(this.publicChatSendButton, "click")
+            .map(_ => this.name + ": " + this.publicChatInputField.value)
+            .broadcastAs("ChatMessage")
+            .subscribe(chatMessage => {
+                this.addChatMessage(chatMessage);
+                this.publicChatInputField.value = "";
+            });
 
         let privateChatMessages = Rx.Observable.fromEvent(this.privateChatSendButton, "click")
             .map(_ => this.name + ": " + this.privateChatInputField.value)
@@ -64,10 +58,6 @@ class CoCodeClientApplication extends actorreactor.Application {
                 let recipientName = this.privateChatCoderMenu.options[this.privateChatCoderMenu.selectedIndex].value;
                 this.sendPrivateMessage(recipientName, privateMessage);
             });
-
-        this.reactTo([cocodeServer, "NewClient"], "addCoder");
-        this.reactTo([highlighterService, "html"], "updateCode");
-        this.cocodeServer.registerClient(this, this.name);
     }
 
     refreshCoders(coders) {
@@ -78,7 +68,6 @@ class CoCodeClientApplication extends actorreactor.Application {
         let references = coders.getClientReferences();
 
         names.forEach((name, idx) => this.addCoder(name, references[idx]));
-
     }
 
     addCoder(name, coderReference) {
@@ -87,7 +76,7 @@ class CoCodeClientApplication extends actorreactor.Application {
 
             this.reactTo([coderReference, "ChatMessage"], "addChatMessage");
             this.coders.addClient(name, coderReference);
-            this.privateChatCoderMenu.innerHTML += "<option value='"+ name + "'>" + name + "</option>";
+            this.privateChatCoderMenu.innerHTML += "<option value='" + name + "'>" + name + "</option>";
         }
     }
 
@@ -113,7 +102,6 @@ class CoCodeClientApplication extends actorreactor.Application {
 }
 
 
-
 $("#loginForm").submit(function (e) {
     // prevent submit event propagation
     e.preventDefault();
@@ -130,6 +118,12 @@ function startApplication(name) {
     let cocodeClient = new CoCodeClientApplication(name);
 
     cocodeClient.remote("127.0.0.1", 8000).then(cocodeServer => {
-        cocodeClient.initialize(cocodeServer);
+        cocodeClient.initialize();
+        cocodeServer.registerClient(cocodeClient, name);
+
+        cocodeClient.reactTo([cocodeServer, "NewClient"], "addCoder");
+
+        let highlighterService = cocodeClient.spawnReactor(CodeHighlighter, [[cocodeServer, "RawCode"]], 8080);
+        cocodeClient.reactTo([highlighterService, "html"], "updateCode");
     });
 }
