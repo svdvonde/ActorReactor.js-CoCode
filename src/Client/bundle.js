@@ -43579,6 +43579,36 @@ module.exports = yeast;
 let actorreactor = require('actorreactor.js/src/application');
 let clientManager = require('../Shared/ClientStore');
 
+let name = "undefined";
+
+let commitButton = document.getElementById("CodeCommitButton");
+let codeField = document.getElementById("codeField");
+
+let publicChatSendButton = document.getElementById("publicSendButton");
+let publicChatInputField = document.getElementById("publicMessageText");
+let publicChatArea = document.getElementById("publicChat");
+
+
+let privateChatCoderMenu = document.getElementById("codersMenu");
+let privateChatSendButton = document.getElementById("privateSendButton");
+let privateChatInputField = document.getElementById("privateMessageText");
+
+
+let codeCommits = Rx.Observable.fromEvent(commitButton, "click")
+    .map(_ => codeField.innerText);
+
+let publicChatMessages = Rx.Observable.fromEvent(publicChatSendButton, "click")
+    .map(_ => name + ": " + publicChatInputField.value);
+
+let privateChatMessageReceivers = Rx.Observable.fromEvent(privateChatCoderMenu, "change")
+    .map(_ => privateChatCoderMenu.options[privateChatCoderMenu.selectedIndex].value);
+
+let privateChatMessageText = Rx.Observable.fromEvent(privateChatSendButton, "click")
+    .map(_ => name + ": " + privateChatInputField.value);
+
+let privateChatMessages = privateChatMessageText.withLatestFrom(privateChatMessageReceivers,
+    function (message, receiver) { return {"receiverName": receiver, "messageText": message }; });
+
 
 class CodeHighlighter extends actorreactor.Reactor {
     imports() {
@@ -43605,42 +43635,15 @@ class CoCodeClientApplication extends actorreactor.Application {
 
         this.coders = new clientManager.ClientStore();
 
-        this.commitButton = document.getElementById("CodeCommitButton");
-        this.codeField = document.getElementById("codeField");
-
-        this.publicChatSendButton = document.getElementById("publicSendButton");
-        this.publicChatInputField = document.getElementById("publicMessageText");
-        this.publicChatArea = document.getElementById("publicChat");
-
-
-        this.privateChatCoderMenu = document.getElementById("codersMenu");
-        this.privateChatSendButton = document.getElementById("privateSendButton");
-        this.privateChatInputField = document.getElementById("privateMessageText");
-
-        /**Rx.Observable.fromEvent(this.codeField, "input")
-            //.throttleTime(3000)
-            .pluck("srcElement", "innerText")
-            .broadcastAs("LiveCode"); */
-
-        Rx.Observable.fromEvent(this.commitButton, "click")
-            .map(_ => this.codeField.innerText)
-            .broadcastAs("CodeCommit");
-
-        Rx.Observable.fromEvent(this.publicChatSendButton, "click")
-            .map(_ => this.name + ": " + this.publicChatInputField.value)
-            .broadcastAs("ChatMessage")
+        codeCommits.broadcastAs("CodeCommit");
+        publicChatMessages.broadcastAs("ChatMessage")
             .subscribe(chatMessage => {
                 this.addChatMessage(chatMessage);
-                this.publicChatInputField.value = "";
-            });
-
-        let privateChatMessages = Rx.Observable.fromEvent(this.privateChatSendButton, "click")
-            .map(_ => this.name + ": " + this.privateChatInputField.value)
-            .subscribe(privateMessage => {
-                this.privateChatInputField.value = "";
-                let recipientName = this.privateChatCoderMenu.options[this.privateChatCoderMenu.selectedIndex].value;
-                this.sendPrivateMessage(recipientName, privateMessage);
-            });
+                publicChatInputField.value = ""; });
+        privateChatMessages.subscribe(message => {
+            this.sendPrivateMessage(message);
+            privateChatInputField.value = "";
+        });
     }
 
     refreshCoders(coders) {
@@ -43655,23 +43658,21 @@ class CoCodeClientApplication extends actorreactor.Application {
 
     addCoder(name, coderReference) {
         if (this.name !== name) {
-            console.log("Adding coder " + name);
-
             this.reactTo([coderReference, "ChatMessage"], "addChatMessage");
             this.coders.addClient(name, coderReference);
-            this.privateChatCoderMenu.innerHTML += "<option value='" + name + "'>" + name + "</option>";
+            privateChatCoderMenu.innerHTML += "<option value='" + name + "'>" + name + "</option>";
         }
     }
 
     addChatMessage(message) {
-        this.publicChatArea.value += message;
-        this.publicChatArea.value += "\n";
+        publicChatArea.value += message;
+        publicChatArea.value += "\n";
     }
 
-    sendPrivateMessage(recipient, message) {
-        console.log("need to send private message to " + recipient);
-        let receiverReference = this.coders[recipient];
-        receiverReference.receivePrivateMessage(message);
+    sendPrivateMessage(message) {
+        privateChatInputField.value = "";
+        let receiverReference = this.coders[message["receiverName"]];
+        receiverReference.receivePrivateMessage(message["messageText"]);
     }
 
     receivePrivateMessage(message) {
@@ -43680,8 +43681,7 @@ class CoCodeClientApplication extends actorreactor.Application {
 
     updateCode(rawHTML) {
         console.log("updating html " + rawHTML);
-        this.codeField.innerHTML = rawHTML;
-        this.codeField.setSelectionRange(rawHTML.length,rawHTML.length);
+        codeField.innerHTML = rawHTML;
     }
 }
 
@@ -43690,7 +43690,7 @@ $("#loginForm").submit(function (e) {
     // prevent submit event propagation
     e.preventDefault();
 
-    let name = $("#coderNameField").val();
+    name = $("#coderNameField").val();
     startApplication(name);
 });
 
