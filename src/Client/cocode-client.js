@@ -7,8 +7,9 @@ class CodeHighlighter extends actorreactor.Reactor {
         importScripts("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js");
     }
 
-    react(rawCode) {
-        rawCode.map(code => self.hljs.highlightAuto(code))
+    react(localCode, serverCode) {
+        localCode.merge(serverCode)
+            .map(code => self.hljs.highlightAuto(code))
             .pluck("value")
             .broadcastAs("html");
     }
@@ -38,6 +39,10 @@ class CoCodeClientApplication extends actorreactor.Application {
         this.privateChatSendButton = document.getElementById("privateSendButton");
         this.privateChatInputField = document.getElementById("privateMessageText");
 
+        /**Rx.Observable.fromEvent(this.codeField, "input")
+            //.throttleTime(3000)
+            .pluck("srcElement", "innerText")
+            .broadcastAs("LiveCode"); */
 
         Rx.Observable.fromEvent(this.commitButton, "click")
             .map(_ => this.codeField.innerText)
@@ -123,7 +128,8 @@ function startApplication(name) {
 
         cocodeClient.reactTo([cocodeServer, "NewClient"], "addCoder");
 
-        let highlighterService = cocodeClient.spawnReactor(CodeHighlighter, [[cocodeServer, "RawCode"]], 8080);
+        let codeSources = [[cocodeClient, "CodeCommit"], [cocodeServer, "CodeUpdate"]];
+        let highlighterService = cocodeClient.spawnReactor(CodeHighlighter, codeSources, 8080);
         cocodeClient.reactTo([highlighterService, "html"], "updateCode");
     });
 }

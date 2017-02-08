@@ -21,7 +21,7 @@ class CoCodeServerApplication extends actorreactor.Application {
 
     receiveCodeCommit(rawCode) {
         console.log("server received code commit " + rawCode);
-        this.broadcast("RawCode", rawCode);
+        this.broadcast("CodeUpdate", rawCode);
     }
 }
 
