@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="279cc442-f6c3-4789-9e50-4868b5e80ea5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Client/cocode-client.js" afterPath="$PROJECT_DIR$/src/Client/cocode-client.js" />
-    </list>
+    <list default="true" id="279cc442-f6c3-4789-9e50-4868b5e80ea5" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,21 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Client/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="76" column="84" lean-forward="false" selection-start-line="76" selection-start-column="84" selection-end-line="76" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="cocode-client.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Client/cocode-client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="58" column="39" lean-forward="false" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+            <state relative-caret-position="435">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -43,31 +31,9 @@
       <file leaf-file-name="cocode-server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Server/cocode-server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="27" selection-end-column="49" />
+            <state relative-caret-position="405">
+              <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/ActorReactor.js/src/application.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientStore.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Shared/ClientStore.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="30" column="10" lean-forward="false" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#40#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -92,7 +58,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -152,25 +118,26 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ActorReactor.js-CoCode" />
+              <option name="myItemId" value="ActorReactor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ActorReactor.js-CoCode" />
+              <option name="myItemId" value="ActorReactor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ActorReactor.js-CoCode" />
+              <option name="myItemId" value="ActorReactor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ActorReactor.js-CoCode" />
+              <option name="myItemId" value="ActorReactor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -180,11 +147,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ActorReactor.js-CoCode" />
+              <option name="myItemId" value="ActorReactor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ActorReactor.js-CoCode" />
+              <option name="myItemId" value="ActorReactor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -198,11 +165,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ActorReactor.js-CoCode" />
+              <option name="myItemId" value="ActorReactor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ActorReactor.js-CoCode" />
+              <option name="myItemId" value="ActorReactor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -217,7 +184,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,21 +323,26 @@
       <workItem from="1486460566096" duration="14390000" />
       <workItem from="1486494094504" duration="1788000" />
       <workItem from="1486548267141" duration="11325000" />
+      <workItem from="1486920525156" duration="98000" />
+      <workItem from="1486988173448" duration="791000" />
+      <workItem from="1487067123807" duration="19000" />
+      <workItem from="1487068460575" duration="298000" />
+      <workItem from="1487082741868" duration="694000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61121000" />
+    <option name="totallyTimeSpent" value="63021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.7572464" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.73007244" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.24275362" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.26992753" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -389,114 +360,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/ConcurrentSortedLinkedList.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/RadixSort.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/SleepingBarber.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/ForkJoin-Creation.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/DiningPhilosophers.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/Big.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/ForkJoin-Creation.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/LogisticMapSeries.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/CountingActor.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/RadixSort.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/Big.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/ConcurrentDictionary.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/ThreadRing.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/CountingActor.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/DiningPhilosophers.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/ConcurrentDictionary.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/ConcurrentSortedLinkedList.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/BankTransaction.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/ProducerConsumer.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/SieveOfEratosthenes.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/ProducerConsumer.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/LogisticMapSeries.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/ForkJoin-Throughput.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/ForkJoin-Throughput.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/PingPong.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/PingPong.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/Chameneos.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/Chameneos.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/FilterBank.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/ThreadRing.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/SleepingBarber.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/CigaretteSmokers.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/SieveOfEratosthenes.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/CigaretteSmokers.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/BankTransaction.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/FilterBank.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/src/commMedium.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/src/ChannelManager.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/src/ChannelManager.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/src/commMedium.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/AllPairShortestPath.js" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/UnbalancedCobwebbedTree.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/AStarSearch.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/PrecisePiComputation.js" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/PrecisePiComputation.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/TrapezoidalApproximation.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/RecursiveMatrixMultiplication.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/QuickSort.js" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/UnbalancedCobwebbedTree.js" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/NQueensFirstNSolutions.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/OnlineFacilityLocation.js" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/RecursiveMatrixMultiplication.js" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/SuccessiveOverRelaxation.js" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/OnlineFacilityLocation.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/AStarSearch.js" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/TrapezoidalApproximation.js" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/SuccessiveOverRelaxation.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/QuickSort.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/AllPairShortestPath.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/benchmarks/Client-Benchmarks/Spiders/NQueensFirstNSolutions.js" />
-        <option value="$PROJECT_DIR$/../Spiders.js/SpiderPong/server.js" />
-        <option value="$PROJECT_DIR$/../Spiders.js/SpiderPong/server.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/server-tests/temp.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/server-tests/testModule.js" />
-        <option value="$PROJECT_DIR$/../Spiders.js/server-tests/testModule.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/src/commMedium.js" />
-        <option value="$PROJECT_DIR$/../Spiders.js/src/ChannelManager.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/src/ChannelManager.js" />
-        <option value="$PROJECT_DIR$/../Spiders.js/src/commMedium.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/client-tests/clientTestModule.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/client-tests/clientTestModule.js" />
-        <option value="$PROJECT_DIR$/../Spiders.js/NativePong/server.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/NativePong/server.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/SpiderPong/server.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/SpiderPong/server.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/client-tests/clientTestModule.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/client-tests/clientTestModule.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/server-tests/temp.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/server-tests/testModule.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/server-tests/testModule.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/AllPairShortestPath.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/UnbalancedCobwebbedTree.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/AStarSearch.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/PrecisePiComputation.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/PrecisePiComputation.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/TrapezoidalApproximation.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/RecursiveMatrixMultiplication.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/QuickSort.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/UnbalancedCobwebbedTree.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/NQueensFirstNSolutions.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/OnlineFacilityLocation.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/RecursiveMatrixMultiplication.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/SuccessiveOverRelaxation.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/OnlineFacilityLocation.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/AStarSearch.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/TrapezoidalApproximation.js" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/SuccessiveOverRelaxation.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/QuickSort.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/AllPairShortestPath.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/benchmarks/Client-Benchmarks/Spiders/NQueensFirstNSolutions.js" />
-        <option value="$PROJECT_DIR$/../Spiders.js/server-tests/server-side.Test.js.map" />
-        <option value="$PROJECT_DIR$/../Spiders.js/client-tests/test.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/client-tests/test.js.map" />
-        <option value="$PROJECT_DIR$/../ActorReactor.js/node_modules/Spiders.js/server-tests/server-side.Test.js.map" />
-      </list>
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -512,7 +375,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -543,7 +405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -579,7 +440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -587,7 +447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,7 +470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -635,7 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="73" lean-forward="true" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -666,7 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="39" column="18" lean-forward="false" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -690,7 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -728,7 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
           <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -851,7 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,24 +720,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Client/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
+        <state relative-caret-position="1022">
           <caret line="76" column="84" lean-forward="false" selection-start-line="76" selection-start-column="84" selection-end-line="76" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Client/cocode-client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" column="39" lean-forward="false" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Server/cocode-server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="27" selection-end-column="49" />
+        <state relative-caret-position="405">
+          <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
           <folding />
         </state>
       </provider>
